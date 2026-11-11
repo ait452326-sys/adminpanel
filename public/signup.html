@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0b0f19">
+  <title>Create account | AdminFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/auth.css"><script src="/js/signup.js" defer></script>
+</head>
+<body class="auth-body">
+  <main class="auth-shell">
+    <section class="auth-aside">
+      <a class="brand" href="/login"><span class="brand-mark">A</span><span>Admin<span class="brand-light">Flow</span></span></a>
+      <div class="aside-copy"><span class="eyebrow">GET STARTED</span><h1>Your workspace.<br>Your command.</h1><p>Create your account and step into a simpler administration experience.</p></div>
+      <div class="aside-foot"><span class="status-dot"></span> Secure workspace · Private access</div>
+    </section>
+    <section class="auth-main">
+      <div class="auth-card signup-card">
+        <div class="mobile-brand"><span class="brand-mark">A</span> AdminFlow</div>
+        <span class="eyebrow">CREATE ACCOUNT</span><h2>Set up your account</h2><p class="muted">A few details and you're ready to go.</p>
+        <div id="form-message" class="notice" role="alert" aria-live="polite" hidden></div>
+        <form id="signup-form" novalidate>
+          <label for="fullName">Full name</label><input id="fullName" name="fullName" type="text" placeholder="Your full name" autocomplete="name" maxlength="100" required>
+          <label for="username">Username</label><input id="username" name="username" type="text" placeholder="Choose a username" autocomplete="username" minlength="3" maxlength="30" required>
+          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="password">Password</label><div class="password-wrap"><input id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required><button class="show-password" type="button" data-toggle-password="password">Show</button></div>
+          <label for="confirmPassword">Confirm password</label><div class="password-wrap"><input id="confirmPassword" name="confirmPassword" type="password" placeholder="Enter password again" autocomplete="new-password" required><button class="show-password" type="button" data-toggle-password="confirmPassword">Show</button></div>
+          <button class="btn btn-primary btn-full signup-submit" type="submit"><span class="btn-label">Create account</span><span class="spinner" hidden></span></button>
+        </form>
+        <p class="auth-switch">Already have an account? <a href="/login">Sign in</a></p>
+        <p class="fine-print">Passwords are hashed before they are stored</p>
+      </div>
+    </section>
+  </main>
+</body></html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0b0f19"><title>Dashboard | AdminFlow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/dashboard.css"><script src="/js/dashboard.js" defer></script></head>
+<body class="dashboard-body">
+<div class="app-layout">
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand sidebar-brand" href="/admin/dashboard"><span class="brand-mark">A</span><span>Admin<span class="brand-light">Flow</span></span></a>
+    <div class="nav-caption">WORKSPACE</div>
+    <nav class="side-nav">
+      <a class="nav-link active" href="/admin/dashboard"><span class="nav-icon">⌂</span>Dashboard</a>
+      <a class="nav-link" href="/admin/users" id="users-nav"><span class="nav-icon">♙</span>Users <span class="nav-lock" id="users-lock">Admin</span></a>
+      <a class="nav-link" href="/profile.html"><span class="nav-icon">◎</span>Profile</a>
+      <a class="nav-link" href="/settings.html"><span class="nav-icon">⚙</span>Settings</a>
+      <a class="nav-link" href="/help.html"><span class="nav-icon">?</span>Help &amp; Support</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="sidebar-tip"><span class="tip-icon">✦</span><strong>You're all set</strong><p>Your workspace is ready. Have a productive day.</p></div><button class="nav-link logout-link" id="logout-button"><span class="nav-icon">↪</span>Log out</button></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">☰</button><div class="breadcrumb">Workspace <span>/</span> <strong>Dashboard</strong></div><div class="topbar-right"><span class="topbar-date" id="topbar-date"></span><div class="avatar" id="top-avatar">A</div></div></header>
+    <div class="page-content">
+      <div class="welcome-row"><div><span class="eyebrow">OVERVIEW</span><h1>WELCOME TO ADMIN PANEL</h1><p class="muted" id="welcome-message">Welcome to your admin dashboard. You are successfully logged in.</p></div><div class="live-pill"><span class="status-dot"></span> All systems operational</div></div>
+      <div id="dashboard-message" class="notice" role="alert" hidden></div>
+      <section class="welcome-card"><div class="welcome-card-content"><span class="card-kicker">YOUR WORKSPACE</span><h2>Welcome aboard<span class="accent-dot">.</span></h2><p>Your dashboard is ready. You're signed in and everything is set up for you.</p><div class="welcome-user"><div class="avatar avatar-large" id="welcome-avatar">A</div><div><strong id="user-name">Loading your profile…</strong><span id="user-email">Please wait</span></div></div></div><div class="welcome-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-core">A</div><span class="spark spark-one">✦</span><span class="spark spark-two">✧</span></div></section>
+      <div class="section-heading"><div><h2>Your account</h2><p class="muted">A quick look at your account details.</p></div><span class="section-tag">PERSONAL OVERVIEW</span></div>
+      <section class="info-grid">
+        <article class="info-card"><div class="info-icon purple">♙</div><span class="info-label">FULL NAME</span><strong id="detail-name">—</strong><span class="info-sub">Your display name</span></article>
+        <article class="info-card"><div class="info-icon blue">@</div><span class="info-label">EMAIL ADDRESS</span><strong id="detail-email" class="break-word">—</strong><span class="info-sub">Your registered email</span></article>
+        <article class="info-card"><div class="info-icon green">✓</div><span class="info-label">ACCOUNT ROLE</span><strong id="detail-role">—</strong><span class="info-sub">Your access level</span></article>
+        <article class="info-card"><div class="info-icon amber">◷</div><span class="info-label">MEMBER SINCE</span><strong id="detail-created">—</strong><span class="info-sub">Account creation date</span></article>
+      </section>
+      <div class="bottom-note"><span>✦</span><div><strong>You're in control.</strong><p>This is your private dashboard. Keep your login details safe.</p></div><span class="bottom-time" id="current-time"></span></div>
+      <footer class="footer">© <span id="year"></span> AdminFlow. Built for clarity.</footer>
+    </div>
+  </main>
+</div>
+</body></html>

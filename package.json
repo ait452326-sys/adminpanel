@@ -1,0 +1,23 @@
+{
+  "name": "professional-admin-panel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive full-stack admin panel using HTML, CSS, Vanilla JS, Node.js, Express and MySQL",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-mysql-session": "^3.0.3",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "mysql2": "^3.11.5"
+  }
+}
